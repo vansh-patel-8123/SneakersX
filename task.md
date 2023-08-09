@@ -3,13 +3,8 @@
 
 - [ ] Backend
   - [ ] Models
-<<<<<<< HEAD
-  - [ ] Authentication
-  - [ ] User
-=======
   - [x] Authentication
   - [x] User
->>>>>>> dev
   - [ ] Product
   - [ ] Cart
   - [ ] Order
@@ -32,9 +27,6 @@
 - [ ] Docker + Deployment
 
 
-<<<<<<< HEAD
-
-=======
 6 Aug 23
 - All Models
 - [ ] Auth
@@ -51,4 +43,3 @@
 - [ ] Notification
 - [ ] Wishlist
 - [ ] Search
->>>>>>> dev
