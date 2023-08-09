@@ -5,6 +5,7 @@ const cors = require('cors');
 const authRoutes = require('./routes/authRoutes.js');
 const mongoose = require('mongoose');
 
+
 // middleware
 app.use(cors());
 app.use(express.json());

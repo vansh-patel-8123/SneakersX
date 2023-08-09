@@ -2,6 +2,7 @@ const User = require("../models/Auth");
 const bcryptJs = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
+
 const tokenGen = (user) => {
     const payload = {
         userId: user.id,

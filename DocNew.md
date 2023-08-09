@@ -75,3 +75,6 @@
   - POST `/shipping/track/:orderId`: Get shipping status for a specific order.
 
 These summaries outline the models and routes for each microservice, providing an overview of the functionalities they handle. You can use these as a reference to further develop and implement your microservices.
+
+
+
