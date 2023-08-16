@@ -1,4 +1,3 @@
-
 **Auth Microservice:**
 - Models:
   - User: Represents user data with fields like username, email, password, etc.

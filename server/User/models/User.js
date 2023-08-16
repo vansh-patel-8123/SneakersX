@@ -12,7 +12,6 @@ const userSchema = new mongoose.Schema({
         required: true
     },
     lastName: { type: String, required: true },
-    email: { type: String, required: true },
     address: {
         street: String,
         city: String,
@@ -22,6 +21,16 @@ const userSchema = new mongoose.Schema({
     },
     contactInfo: {
         phone: String,
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now,
+        required: true
+    },
+    updatedAt: {
+        type: Date,
+        default: Date.now,
+        required: true
     }
 })
 

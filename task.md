@@ -2,7 +2,7 @@
 - [ ] Project file structure / setup
 
 - [ ] Backend
-  - [ ] Models
+  - [x] Models
   - [x] Authentication
   - [x] User
   - [ ] Product

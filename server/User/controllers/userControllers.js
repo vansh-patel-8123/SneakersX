@@ -21,6 +21,9 @@ const updateUserProfile = async (req, res) => {
     const updateProfileData = req.body;
     
     try {
+        // Add updatedAt timestamp to the updateProfileData
+        updateProfileData.updatedAt = new Date();
+
         const userProfile = await User.findOneAndReplace({ userId }, updateProfileData, { new: true });
 
         if (!userProfile) {
