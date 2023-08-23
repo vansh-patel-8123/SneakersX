@@ -1,16 +1,39 @@
-router.get('/', sneakersControllers.getAllOrder)
-router.get('/:id', sneakersControllers.specificOrder)
-router.post('/', sneakersControllers.createOrder)
-router.put('/:id', sneakersControllers.updateOrder)
-router.delete('/:id', sneakersControllers.deleteOrder)
+const Order = require("../models/Order")
 
-const getAllOrder = (req,res) => {
+const getAllOrder = async (req,res) => {
+    try{
+        // Finding on DB
+        const orders = await Order.find();
+        if(!orders){
+            return res.status(404).json({ message: 'Order not found' });
+        }
+        return res.status(200).json(orders);
+    }
+   catch(error){
+    return res.status(500).json({message: 'An error occurred'})
+   }
 
 };
-const specificOrder = (req,res) => {
+const specificOrder = async (req,res) => {
+    // OrderID
+    const orderId = req.params.orderId;
 
+    try{
+        // Finding OrderId on DB
+        const order = await Order.findOne({orderId});
+        
+        if(!orders){
+            return res.status(404).json({ message: 'Order not found' });
+        }
+
+        return res.status(200).json(order);
+
+    }catch(error){
+        return res.status(500).json({message: 'An An error occurred'})
+    }
 };
 const createOrder = (req,res) => {
+    const { sneakerId, buyer, totalPrice } = req.body;
 
 };
 
